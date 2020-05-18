@@ -1,9 +1,12 @@
 import random
 import math
 import os
-#the begining
+#the beginning
+
+#IMPORTANT: SKILL ACTUALLY MEANS DEFENSE!!!!!!
+
 def start():
-    Q1 = (input("press Y or N and enter for the respected answer "))
+    Q1 = (input("Press Y or N. Click Enter to submit. "))
     if Q1 == ("Y") or Q1 == ("y"):
         str(data_test())
     elif Q1 == ("N") or Q1 == ("n"):
@@ -28,19 +31,19 @@ def data_test():
     ski_mod = 0
     str_mod = 0
     if os.path.exists('D&D A.txt') == True:
-        print ("Their is saved data already in this file do you want to use this data?")
-        Q2 = (input("press Y or N and enter for the respected answer "))
+        print ("Their is saved data already in this file. 'Do you want to use this data?")
+        Q2 = (input("Press Y or N. Click Enter to submit. "))
         if Q2 == ("Y") or Q2 == ("y"):
             print ("Loading data...")
             str(load_player_data())
         elif Q2 == ("N") or Q2 == ("n"):
-            print("ok Proceeding to manually entering player data")
+            print("OK, proceeding to manually enter player data")
             str(set_player_name())
         else:
-            print("Invalided input")
+            print("Invalid input")
             str(data_test())
     else:
-        print ("No saved data detected proceeding to manually inputting player data")
+        print ("No saved data detected. Proceeding to manually inputting player data")
         str(set_player_name())
 #loads task two data
 def load_player_data():
@@ -51,10 +54,10 @@ def load_player_data():
 def set_player_name():
     global name1
     global name2
-    print ("lets give names to our characters")
-    print ("ok now give a name to characters one")
-    name1 = (input("input name of characters one "))
-    print ("good now lets give the second characters a name")
+    print ("Let's give names to our characters!")
+    print ("OK, now give a name to characters one.")
+    name1 = (input("Please input name of characters one "))
+    print ("Good, now lets give the second character a name.")
     name2 = (input("input name of characters two "))
     print("")
     print ("Now both characters have names, let's give them attributes")
@@ -65,11 +68,11 @@ def set_player_name():
     print ("the score on the 4 sided dice and rounded down.")
     print ("Then we repeat the process for each characters attributes")
     str(set_player_1_ski())
-#dose what the name sais and sets player 1 skill
+#dose what the name sais and sets player 1 skill/defense
 def set_player_1_ski():
     global ski1
     global name1
-    Q3 = input((name1)+(" press r to roll the 12 and 4 sided dice to determine your 'SKILL' "))
+    Q3 = input((name1)+(" press r to roll the 12 and 4 sided dice to determine your 'DEFENSE' "))
     if Q3 == ("r") or Q3 == ("R"):
         roll12 = random.randint(1,12)
         roll4 = random.randint (1,4)
@@ -77,7 +80,7 @@ def set_player_1_ski():
         print (roll12)
         print ("and the 4 sided rolled:")
         print (roll4)
-        print ("Good, that makes your 'SKILL':")
+        print ("Good, that makes your 'DEFENSE':")
         ski1 = math.floor(((roll12)/(roll4))+(ski1))
         print (ski1)
         str(set_player_1_str())
@@ -100,7 +103,7 @@ def set_player_1_str():
         str1 = math.floor(((roll12)/(roll4))+(str1))
         print ("Now your 'STRENGTH' is:")
         print (str1)
-        print ("good "+ str(name1) + " and your 'SKILL' is " +  str(ski1))
+        print ("good "+ str(name1) + " and your 'DEFENSE' is " +  str(ski1))
         str(set_player_2_ski())
     else:
         print ("invalid input")
@@ -111,7 +114,7 @@ def set_player_2_ski():
     global name2
     global ski2
     print ((name2)+(" now its your tern to roll the dice"))
-    Q5 = input(" press 'r' to roll the dice to determine your 'SKILL'")
+    Q5 = input(" press 'r' to roll the dice to determine your 'DEFENSE!'")
     if Q5 == ("r") or Q2 == ("R"):
         roll12 = random.randint(1,12)
         roll4 = random.randint (1,4)
@@ -119,7 +122,7 @@ def set_player_2_ski():
         print (roll12)
         print ("and the 4 sided rolled:")
         print (roll4)
-        print ("good, that makes your 'SKILL':")
+        print ("good, that makes your 'DEFENSE':")
         ski2 = math.floor(((roll12)/(roll4))+(ski2))
         print (ski2)
         print ("press r again to roll for your'STRENGTH'")
@@ -143,7 +146,7 @@ def set_player_2_str():
         str2 = math.floor(((roll12)/(roll4))+(str2))
         print ("now your 'STRENGTH' is:")
         print (str2)
-        print ("good "+ str(name2) + " and your 'SKILL' is " +  str(ski2))
+        print ("good "+ str(name2) + " and your 'DEFENSE' is " +  str(ski2))
         print ("now that the attributes have been set do you want to do, move on to the modifiers or reroll them")
         str(player_RR_or_MO())
     else:
@@ -151,7 +154,7 @@ def set_player_2_str():
         str(set_player_2_str())
 #asks the player if thay whant to reroll ther atrabuts
 def player_RR_or_MO():
-    Q6 = input("to set the modifires press 'm' or to reroll the attributes press 'r' ")
+    Q6 = input("to set the modifiers press 'm' or to reroll the attributes press 'r' ")
     if Q6 == ("m") or Q6 == ("M"):
         print("moving on to modifiers...")
         str(set_mod_ski())
@@ -161,7 +164,7 @@ def player_RR_or_MO():
     else:
         print ("invalid input")
         str(player_RR_or_MO())
-#sets the skill modifier
+#sets the defense/skill modifier
 def set_mod_ski():
     global name1
     global name2
@@ -170,7 +173,7 @@ def set_mod_ski():
     global ski2
     global str2
     global ski_mod
-    print("calculating modifires...")
+    print("calculating modifiers...")
     if ski1 > ski2:
         ski_mod = ski1 - ski2
     elif ski2 > ski1:
@@ -186,6 +189,7 @@ def set_mod_srt():
     global str2
     global ski_mod
     global str_mod
+
     if str1 > str2:
         str_mod = str1 - str2
     elif str2 > str1:
@@ -194,16 +198,16 @@ def set_mod_srt():
     print("the results are:")
     print("strength modifirer:")
     print(ski_mod)
-    print("skill modifirer:")
+    print("defense modifier:")
     print(str_mod)
     str(battel_start())
-#start the battel off
+#start the battle off
 def battel_start():
-    print ("to win the battle you need to decrease your opponent's attributes to '0'. To do so,")
+    print ("to win the battle you need to decrease your opponent's defense to '0'. To do so,")
     print("you need to roll a dice for each player and whichever player has the lowest score")
-    print("has their attributes decreased by the modifiers and this process continues until there is a winner.")
+    print("has their defense decreased by the modifiers and this process continues until there is a winner.")
     str(battel_main())
-#tells the player what evrythink is
+#tells the player what everything is
 def battel_main():
     global name1
     global name2
@@ -213,16 +217,16 @@ def battel_main():
     global str2
     global ski_mod
     global str_mod
-    print(str(name1)+" your skill is: ")
+    print(str(name1)+" your defense is: ")
     print(str(ski1))
     print("and your strength is: ")
     print(str1)
-    print(str(name2)+" your skill is: ")
+    print(str(name2)+" your defense is: ")
     print(str(ski2))
     print("and your strength is: ")
     print(str2)
     print("and the modifies are: ")
-    print("skill mod: "+str(ski_mod))
+    print("defense mod: "+str(ski_mod))
     print("strength mod: "+str(str_mod))
     str(battel_test())
 #test if the player has whon
@@ -324,5 +328,5 @@ def play_again():
     print ("do you want to play again?")
     str(start())
 #the begining at the end
-print("welcome are you ready to play dungeon and dragons?")
+print("Welcome warrior! Are you ready to play Playmobile Warriors?")
 str(start())

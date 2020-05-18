@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77bbc383-90ee-4e8e-8cd0-2f6a1c258bed" name="Default Changelist" comment="" />
+    <list default="true" id="77bbc383-90ee-4e8e-8cd0-2f6a1c258bed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BattleSimulator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BattleSimulator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +20,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1c50Oop9SPr0LaZYBIJKaQadJYS" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,8 +31,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -55,7 +66,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\laisj\PycharmProjects\BattleSimulator\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="/usr/local/bin/python3.8" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -94,6 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589803117333</updated>
       <workItem from="1589803142168" duration="1734000" />
+      <workItem from="1589807430384" duration="1367000" />
     </task>
     <servers />
   </component>
@@ -101,32 +113,46 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="34" y="15" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589803414274">
-      <screen x="0" y="0" width="1156" height="720" />
+    <state x="1496" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589808701351">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="34" y="15" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1156.720@0.0.1156.720" timestamp="1589803414274" />
+    <state x="1496" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1589808701351" />
+    <state x="1496" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1589807726611" />
     <state x="360" y="116" key="FileChooserDialogImpl" timestamp="1589803351015">
       <screen x="0" y="0" width="1156" height="720" />
     </state>
     <state x="360" y="116" key="FileChooserDialogImpl/0.0.1156.720@0.0.1156.720" timestamp="1589803351015" />
-    <state width="1114" height="176" key="GridCell.Tab.0.bottom" timestamp="1589804679919">
-      <screen x="0" y="0" width="1156" height="720" />
+    <state width="1878" height="641" key="GridCell.Tab.0.bottom" timestamp="1589808614850">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state width="1114" height="176" key="GridCell.Tab.0.bottom/0.0.1156.720@0.0.1156.720" timestamp="1589804679919" />
-    <state width="1114" height="176" key="GridCell.Tab.0.center" timestamp="1589804679919">
-      <screen x="0" y="0" width="1156" height="720" />
+    <state width="1878" height="641" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1589808614850" />
+    <state width="1878" height="641" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1589807828339" />
+    <state width="1878" height="641" key="GridCell.Tab.0.center" timestamp="1589808614848">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state width="1114" height="176" key="GridCell.Tab.0.center/0.0.1156.720@0.0.1156.720" timestamp="1589804679919" />
-    <state width="1114" height="176" key="GridCell.Tab.0.left" timestamp="1589804679919">
-      <screen x="0" y="0" width="1156" height="720" />
+    <state width="1878" height="641" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1589808614848" />
+    <state width="1878" height="641" key="GridCell.Tab.0.center/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1589807828337" />
+    <state width="1878" height="641" key="GridCell.Tab.0.left" timestamp="1589808614847">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state width="1114" height="176" key="GridCell.Tab.0.left/0.0.1156.720@0.0.1156.720" timestamp="1589804679919" />
-    <state width="1114" height="176" key="GridCell.Tab.0.right" timestamp="1589804679919">
-      <screen x="0" y="0" width="1156" height="720" />
+    <state width="1878" height="641" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1589808614847" />
+    <state width="1878" height="641" key="GridCell.Tab.0.left/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1589807828335" />
+    <state width="1878" height="641" key="GridCell.Tab.0.right" timestamp="1589808614849">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state width="1114" height="176" key="GridCell.Tab.0.right/0.0.1156.720@0.0.1156.720" timestamp="1589804679919" />
+    <state width="1878" height="641" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1589808614849" />
+    <state width="1878" height="641" key="GridCell.Tab.0.right/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1589807828338" />
+    <state x="1909" y="179" key="SettingsEditor" timestamp="1589807689091">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1909" y="179" key="SettingsEditor/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1589807689090" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/BattleSimulator$main.coverage" NAME="main Coverage Results" MODIFIED="1589804679908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BattleSimulator$main.coverage" NAME="main Coverage Results" MODIFIED="1589808614840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
